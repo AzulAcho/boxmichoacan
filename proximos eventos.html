@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Próximos Eventos - Box Michoacán</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1e3c72 0%, #417cb8 100%);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    nav.main-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav.main-nav a {
+      color: #d6e4f0;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav.main-nav a:hover {
+      background-color: #d6e4f0;
+      color: #2c3e50;
+    }
+
+    .quick-access {
+      position: fixed;
+      top: 35%;
+      left: 25px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 15;
+    }
+
+    .quick-access button {
+      background-color: #4a90e2;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(74, 144, 226, 0.5);
+      transition: background-color 0.3s ease;
+      font-size: 0.9rem;
+      min-width: 140px;
+    }
+
+    .quick-access button:hover {
+      background-color: #357abd;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(44, 62, 80, 0.1);
+    }
+
+    .evento {
+      margin-bottom: 40px;
+      border-left: 5px solid #e67e22;
+      padding-left: 20px;
+    }
+
+    .evento h2 {
+      font-size: 1.6rem;
+      color: #2c3e50;
+    }
+
+    .evento p {
+      font-size: 1.1rem;
+      color: #34495e;
+    }
+
+    .evento small {
+      color: #7f8c8d;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #d6e4f0;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 8px rgba(44, 62, 80, 0.3);
+    }
+
+    footer nav a {
+      color: #aeb8c2;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer nav a:hover {
+      color: #e67e22;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      nav.main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .quick-access {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0;
+        transform: none;
+      }
+
+      main {
+        margin: 20px 15px;
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Próximos Eventos</h1>
+    <nav class="main-nav">
+      <a href="BOX MICHOACÁN.html">Inicio</a>
+    </nav>
+  </header>
+
+  <div class="quick-access">
+    <button onclick="location.href='BOX MICHOACÁN.html'">🏠 Inicio</button>
+  </div>
+
+  <main>
+    <section class="evento">
+      <h2>Copa Estatal Juvenil 2025</h2>
+      <small>15 - 17 de junio, Morelia</small>
+      <p>Participan más de 100 jóvenes talentos de todo el estado en esta edición especial de la Copa Estatal. Se llevará a cabo en el Auditorio Bicentenario.</p>
+    </section>
+
+    <section class="evento">
+      <h2>Festival de Box Femenil Michoacán</h2>
+      <small>29 de junio, Uruapan</small>
+      <p>Un evento dedicado a la visibilidad del boxeo femenil en la región. Contará con clínicas, exhibiciones y combates en distintas categorías.</p>
+    </section>
+
+    <section class="evento">
+      <h2>Campeonato Regional Occidente</h2>
+      <small>6 - 8 de julio, Zamora</small>
+      <p>Boxeadores de Jalisco, Colima, Nayarit y Michoacán competirán por el pase al nacional. Evento avalado por la Federación Mexicana de Boxeo.</p>
+    </section>
+  </main>
+
+  <footer>
+    Síguenos en nuestras redes:
+    <nav>
+      <a href="https://www.facebook.com/profile.php?id=61576619952263">Facebook</a> |
+      <a href="https://www.instagram.com/box_michoacan/">Instagram</a> |
+      <a href="https://www.youtube.com/channel/UCcmYOpHQXaD7xPXOeN_7tPw">YouTube</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

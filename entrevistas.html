@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entrevistas - Box Michoacán</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #2c3e50;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1e3c72 0%, #417cb8 100%);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    nav.main-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav.main-nav a {
+      color: #d6e4f0;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav.main-nav a:hover {
+      background-color: #d6e4f0;
+      color: #2c3e50;
+    }
+
+    .quick-access {
+      position: fixed;
+      top: 35%;
+      left: 25px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 15;
+    }
+
+    .quick-access button {
+      background-color: #4a90e2;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(74, 144, 226, 0.5);
+      transition: background-color 0.3s ease;
+      font-size: 0.9rem;
+      min-width: 140px;
+    }
+
+    .quick-access button:hover {
+      background-color: #357abd;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(44, 62, 80, 0.1);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .interview {
+      margin-top: 20px;
+    }
+
+    .interview iframe, .interview video {
+      width: 100%;
+      max-height: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .interview p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #34495e;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #d6e4f0;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 8px rgba(44, 62, 80, 0.3);
+    }
+
+    footer nav a {
+      color: #aeb8c2;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer nav a:hover {
+      color: #e67e22;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      nav.main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .quick-access {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0;
+        transform: none;
+      }
+
+      main {
+        margin: 20px 15px;
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Entrevistas</h1>
+    <nav class="main-nav">
+      <a href="BOX MICHOACÁN.html">Inicio</a>
+    </nav>
+  </header>
+
+  <div class="quick-access">
+    <button onclick="location.href='BOX MICHOACÁN.html'">🏠 Inicio</button>
+  </div>
+
+  <main>
+    <section class="section">
+      <h2>Charlas Exclusivas</h2>
+      <p>Entrevistas con entrenadores, promotores y los mejores talentos del boxeo michoacano. Conoce sus historias, motivaciones y sueños.</p>
+    </section>
+
+    <section class="section">
+      <div class="interview">
+        <iframe src="https://youtu.be/NWf9N7718wY?si=9ieGhtmEqrW1y3sM" title="Entrevista a boxeador local" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Entrevista a Carlos “El Toro” Mendoza</strong> – Nos comparte su preparación antes del campeonato estatal y su historia de vida dentro del boxeo amateur.</p>
+      </div>
+
+      <div class="interview">
+        <iframe src="https://youtu.be/fpKFQ3-Z_jE?si=3km5ITogdlMFPjLI" title="Entrevista a entrenador" frameborder="0" allowfullscreen></iframe>
+        <p><strong>Profe Ramírez, entrenador del año</strong> – Hablamos sobre la formación de jóvenes talentos y el boxeo como disciplina que transforma vidas.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Síguenos en nuestras redes:
+    <nav>
+      <a href="https://www.facebook.com/profile.php?id=61576619952263">Facebook</a> |
+      <a href="https://www.instagram.com/box_michoacan/">Instagram</a> |
+      <a href="https://www.youtube.com/channel/UCcmYOpHQXaD7xPXOeN_7tPw">YouTube</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
